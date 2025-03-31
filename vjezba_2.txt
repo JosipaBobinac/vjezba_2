@@ -1,0 +1,31 @@
+touch vjezba_2.txt
+mv vjezba_2.txt vjezba_2
+1. Zadatak
+mkdir  -p vjezba_2/data vjezba_2/backup
+touch vjezba_2/data/script.js vjezba_2/data/style.css vjezba_2/data/.env
+echo "console.log(\"Hello,World\")" > vjezba_2/data/script.js
+echo "body { background-color: #fOfOfO; }" >vjezba_2/data/style.css
+echo "VJEZBA=OS" > vjezba_2/data/.env
+Zadatak 2.
+cp -rv vjezba_2/data vjezba_2/backup
+cd vjezba_2/data 
+ls -laS "C:\Users\Korisnik\Desktop\GitHub2\vjezba_2\backup"
+Zadatak 3
+cd ..
+rm -rvi data
+    rm: descend into directory 'data'? y
+    rm: remove regular file 'data/.env'? n
+    rm: remove regular file 'data/script.js'? y
+    removed 'data/script.js'
+    rm: remove regular file 'data/style.css'? y
+    removed 'data/style.css'
+    rm: remove directory 'data'? n
+cd backup
+cp -nv data/* .
+cd ..
+ls -lat1 data
+Zadatak 4
+cd "C:\Users\Korisnik\Desktop\INFORMATIKA ONLINE 2 SEMESTAR"
+ls -laS
+ls -lSh
+ls -lRat --color
